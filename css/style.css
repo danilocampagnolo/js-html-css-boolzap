@@ -9,6 +9,18 @@
   background: #009688;
 }
 .main-page {
+  position: relative;
   height: calc(100vh - 130px);
   background: #D8DBD5;
+}
+
+.wrapper {
+  position: absolute;
+  top: -110px;
+  transform: translateX(12.5%);
+  width: 80%;
+  height: 110%;
+  min-width: 800px;
+  margin: auto;
+  background: red;
 }
