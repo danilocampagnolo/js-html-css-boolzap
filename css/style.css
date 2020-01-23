@@ -197,7 +197,7 @@ main {
   overflow-y: scroll;
   /* border: 1px solid yellow; */
 }
-.msg-input, .msg-output {
+.msg {
   /* display: inline-block; */
   padding: 6px 7px 8px 9px;
   color: #303030;
@@ -212,12 +212,12 @@ main {
   text-align: right;
   margin-top: 4px;
 }
-.msg-input {
+.msg.input {
   background: #dcf8c6;
   align-self: flex-end;
   margin-left: 35%;
 }
-.msg-output {
+.msg.output {
   background: #fff;
   align-self: flex-start;
   margin-right: 35%;
