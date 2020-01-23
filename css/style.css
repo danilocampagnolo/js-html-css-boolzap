@@ -193,26 +193,25 @@ a {
 }
 
 /* chat */
-.chat {
+.chat-window {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 30px 50px;
   height: calc(100% - 70px);
   background-image: url(../img/msg-background.jpg);
+  background-position: center;
+  background-repeat: repeat;
   /* border: 1px solid yellow; */
 }
 
 
-.msg {
-  height: 50px;
+.msg-in {
   background-color: #D5F9BB;
 }
-.contact-msg .msg {
+.msg-out {
   background-color: #FFFFFF;
 }
-
-
 
 
 
