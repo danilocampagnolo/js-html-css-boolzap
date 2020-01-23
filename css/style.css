@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-page {
+  height: 130px;
+  background: #009688;
+}
+.main-page {
+  height: calc(100vh - 130px);
+  background: #D8DBD5;
+}
