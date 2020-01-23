@@ -160,13 +160,35 @@ a {
   padding: 10px;
 }
 
-
-
+/* contacts */
 .contacts {
   width: 100%;
   height: calc(100% - (80px + 50px));
-  border: 1px solid black;
+  overflow-y: scroll;
+  background-color: #FFFFFF;
 }
+.contacts .user {
+  padding: 10px 15px;
+  border-top: 1px solid #F5F5F5;
+}
+.contacts .user:first-child {
+  border-top: none;
+}
+.contacts .user:hover {
+  cursor: pointer;
+  background-color: #E9EBEB;
+}
+.user-name {
+  width: 100%;
+}
+.user-name div {
+  display: flex;
+  justify-content: space-between;
+}
+.user-name div p {
+  color: #C7C9CA;
+}
+
 
 .chat {
   width: 100%;
