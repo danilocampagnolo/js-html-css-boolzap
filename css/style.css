@@ -55,3 +55,30 @@
   flex-basis: 70%;
   border: 1px solid yellow;
 }
+
+.notify {
+  width: 100%;
+  height: 80px;
+  border: 1px solid yellow;
+}
+.search {
+  width: 100%;
+  height: 50px;
+  border: 1px solid yellow;
+}
+.contacts {
+  width: 100%;
+  height: calc(100% - (80px + 50px));
+  border: 1px solid black;
+}
+
+.chat {
+  width: 100%;
+  height: calc(100% - 70px);
+  border: 1px solid yellow;
+}
+.write-message {
+  width: 100%;
+  height: 70px;
+  border: 1px solid yellow;
+}
