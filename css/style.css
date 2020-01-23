@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 body {
+  display: flex;
+  height: 100vh;
   font-family: 'Roboto', sans-serif;
   background: rgb(0,150,135);
   background: linear-gradient(180deg, rgba(0,150,135,1) 0%, rgba(0,150,135,1) 20%, rgba(217,218,213,1) 20%);
@@ -13,11 +15,8 @@ a {
 }
 
 .wrapper {
-  position: absolute;
-  /* top: -110px; */
-  /* transform: translateX(12.5%); */
   width: 80%;
-  height: 110%;
+  height: 95vh;
   min-width: 1000px;
   margin: auto;
 }
