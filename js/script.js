@@ -60,19 +60,13 @@ $(document).ready(function() {
   function searchContact() {
     var search = $(".search input").val().toLowerCase();
     var contact = $(".contacts .user");
-    var contactName = $(".contacts .user h4").clone();
-    contactName.addClass("lower-case");
 
-    console.log(search);
-    console.log(contact);
-    console.log(contactName);
-
-    var i = 1;
-    console.log();
-
-    // for (var i = 0; i < contact.length; i++) {
-    //   if (search != contactName[i]) {
-    //     contact["data-contact[i]"].hide();
-    //   }
-    // }
+    contact.each(
+      function() {
+        var contactName = $(this).find("h4").text().trim().toLowerCase();
+        if (contactName.includes(search)) {
+          
+        }
+      }
+    );
   }
