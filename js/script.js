@@ -64,8 +64,10 @@ $(document).ready(function() {
     contact.each(
       function() {
         var contactName = $(this).find("h4").text().trim().toLowerCase();
-        if (contactName.includes(search)) {
-          
+        if (!contactName.includes(search)) {
+          $(this).hide();
+        } else {
+          $(this).show();
         }
       }
     );
