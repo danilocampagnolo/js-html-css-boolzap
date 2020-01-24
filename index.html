@@ -15,6 +15,7 @@
   <title>Boolzapp</title>
 </head>
 <body>
+  <!-- ================ WRAPPER ================= -->
   <div class="wrapper">
     <!-- HEADER -->
     <header>
@@ -71,8 +72,8 @@
         </div>
         <!-- /search -->
         <!-- contacts -->
-        <div class="contacts">
-          <div class="user">
+        <ul class="contacts">
+          <li class="user" data-contact="0">
             <img class="header-img" src="img/sagoma.jpg" alt="">
             <div class="user-name">
               <div>
@@ -81,8 +82,8 @@
               </div>
               <p>Non poteva essere altrimenti</p>
             </div>
-          </div>
-          <div class="user">
+          </li>
+          <li class="user" data-contact="1">
             <img class="header-img" src="img/sagoma.jpg" alt="">
             <div class="user-name">
               <div>
@@ -91,8 +92,8 @@
               </div>
               <p>Non poteva essere altrimenti</p>
             </div>
-          </div>
-          <div class="user">
+          </li>
+          <li class="user" data-contact="2">
             <img class="header-img" src="img/sagoma.jpg" alt="">
             <div class="user-name">
               <div>
@@ -101,8 +102,8 @@
               </div>
               <p>Non poteva essere altrimenti</p>
             </div>
-          </div>
-          <div class="user">
+          </li>
+          <li class="user" data-contact="3">
             <img class="header-img" src="img/sagoma.jpg" alt="">
             <div class="user-name">
               <div>
@@ -111,8 +112,8 @@
               </div>
               <p>Non poteva essere altrimenti</p>
             </div>
-          </div>
-          <div class="user">
+          </li>
+          <li class="user" data-contact="4">
             <img class="header-img" src="img/sagoma.jpg" alt="">
             <div class="user-name">
               <div>
@@ -121,8 +122,8 @@
               </div>
               <p>Non poteva essere altrimenti</p>
             </div>
-          </div>
-          <div class="user">
+          </li>
+          <li class="user" data-contact="5">
             <img class="header-img" src="img/sagoma.jpg" alt="">
             <div class="user-name">
               <div>
@@ -131,8 +132,8 @@
               </div>
               <p>Non poteva essere altrimenti</p>
             </div>
-          </div>
-          <div class="user">
+          </li>
+          <li class="user" data-contact="6">
             <img class="header-img" src="img/sagoma.jpg" alt="">
             <div class="user-name">
               <div>
@@ -141,8 +142,8 @@
               </div>
               <p>Non poteva essere altrimenti</p>
             </div>
-          </div>
-          <div class="user">
+          </li>
+          <li class="user" data-contact="7">
             <img class="header-img" src="img/sagoma.jpg" alt="">
             <div class="user-name">
               <div>
@@ -151,8 +152,8 @@
               </div>
               <p>Non poteva essere altrimenti</p>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
         <!-- /contacts -->
       </section>
       <!-- /main-left -->
@@ -160,13 +161,15 @@
       <!-- main-right -->
       <section class="main-right">
         <!-- chat-window -->
-        <ul class="chat-window">
+        <ul class="chat-window active" data-contact="0">
           <li class="msg input">
             <p>input:ciao come stai</p>
+            <i class="fa fa-chevron-down f-right message-options"></i>
             <span class="time">15.58</span>
           </li>
           <li class="msg output">
             <p>output:ciao come stai</p>
+            <i class="fa fa-chevron-down f-right message-options"></i>
             <span class="time">15.58</span>
           </li>
         </ul>
@@ -184,11 +187,13 @@
     <!-- /MAIN -->
 
   </div>
+  <!-- ================ WRAPPER ================ -->
 
   <section class="template">
-    <li class="element">
-
+    <li>
+      <p></p>
     </li>
+    <span class="time"></span>
   </section>
 
   <script src="js/script.js" charset="utf-8"></script>
