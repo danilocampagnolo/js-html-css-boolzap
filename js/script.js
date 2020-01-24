@@ -4,6 +4,12 @@ $(document).ready(function() {
         sendMessage();
       }
   );
+  $(document).on("click", ".search i.fa-search",
+      function() {
+        searchContact();
+      }
+  );
+
 });
 
 
@@ -35,7 +41,7 @@ $(document).ready(function() {
     var hours = addZero(data.getHours());
     var minutes = addZero(data.getMinutes());
     var time = hours +':'+ minutes;
-    
+
     var textOutput = "ok";
     var newMessageOutput = $(".template li").clone();
     newMessageOutput.addClass("msg output");
@@ -49,4 +55,24 @@ $(document).ready(function() {
       number = '0' + number;
     }
     return number;
+  }
+
+  function searchContact() {
+    var search = $(".search input").val().toLowerCase();
+    var contact = $(".contacts .user");
+    var contactName = $(".contacts .user h4").clone();
+    contactName.addClass("lower-case");
+
+    console.log(search);
+    console.log(contact);
+    console.log(contactName);
+
+    var i = 1;
+    console.log();
+
+    // for (var i = 0; i < contact.length; i++) {
+    //   if (search != contactName[i]) {
+    //     contact["data-contact[i]"].hide();
+    //   }
+    // }
   }

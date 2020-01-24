@@ -24,6 +24,13 @@ li {
   margin: auto;
 }
 
+.display-none {
+  display: none;
+}
+.lower-case {
+  text-transform: lowercase;
+}
+
 /* ===============HEADER-WRAPPER================ */
 header {
   display: flex;
