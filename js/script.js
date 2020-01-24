@@ -4,9 +4,9 @@ $(document).ready(function() {
       function() {
       var text = $(".write-message input").val();
       console.log(text);
-      var newMessageInput = $(".template .msg-input").clone();
+      var newMessageInput = $(".template li").clone();
       newMessageInput.append(text);
-      $(".chat-window .msg.input").append(newMessageInput);
+      $(".chat-window").append(newMessageInput);
     }
   );
 
