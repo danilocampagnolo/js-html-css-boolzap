@@ -4,8 +4,8 @@ $(document).ready(function() {
       function() {
       var text = $(".write-message input").val();
       console.log(text);
-      var newMessageInput = $(".template li p").clone();
-      newMessageInput.append(text);
+      var newMessageInput = $(".template li").clone();
+      newMessageInput.children("p").append(text);
       newMessageInput.addClass("msg input");
       $(".chat-window").append(newMessageInput);
     }

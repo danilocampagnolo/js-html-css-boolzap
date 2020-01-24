@@ -204,13 +204,19 @@ main {
   /* display: inline-block; */
   position: relative;
   min-width: 30%;
-  max-width: 60%;
+  max-width: 350px;
   padding: 6px 7px 8px 9px;
   color: #303030;
   border-radius: 7.5px;
   margin-bottom: 3px;
   box-shadow: 0 1px 0.5px rgba(0,0,0,.13);
+  overflow: hidden;
+  word-break: break-all;
 }
+.msg p {
+  width: 100%;
+}
+
 .msg i {
   position: absolute;
   right: 10px;
