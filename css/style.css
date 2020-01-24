@@ -203,9 +203,8 @@ main {
 .msg {
   /* display: inline-block; */
   position: relative;
-  min-width: 30%;
   max-width: 350px;
-  padding: 6px 7px 8px 9px;
+  padding: 6px 20px 8px 9px;
   color: #303030;
   border-radius: 7.5px;
   margin-bottom: 3px;
@@ -222,7 +221,7 @@ main {
   right: 10px;
   top: 8px;
   font-size: 13px;
-  color: #B6B9BB;
+  color: rgba(0, 0, 0, 0.46);
   display: none;
   cursor: pointer;
 }
@@ -268,4 +267,8 @@ main {
   border-radius: 5px;
   padding: 10px;
   border: none;
+}
+
+.template {
+  display: none;
 }
