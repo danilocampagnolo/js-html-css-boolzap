@@ -7,7 +7,7 @@ body {
   display: flex;
   height: 100vh;
   min-width: 1000px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   background: rgb(0,150,135);
   background: linear-gradient(180deg, rgba(0,150,135,1) 0%, rgba(0,150,135,1) 20%, rgba(217,218,213,1) 20%);
 }
