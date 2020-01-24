@@ -9,10 +9,10 @@ $(document).ready(function() {
 
 // ===================FUNCTIONS
   function sendMessage() {
-    var text = $(".write-message input").val();
-    console.log(text);
+    var textInput = $(".write-message input").val();
+    console.log(textInput);
 
-    if (text.length != 0) {
+    if (textInput.length != 0) {
       var newMessageInput = $(".template li").clone();
 
       var data = new Date();
@@ -21,12 +21,27 @@ $(document).ready(function() {
       var time = hours +':'+ minutes;
 
       newMessageInput.addClass("msg input");
-      newMessageInput.children("p").append(text);
+      newMessageInput.children("p").append(textInput);
       newMessageInput.children(".time").append(time);
       $(".chat-window").append(newMessageInput);
       $(".write-message input").val("");
+
+      setTimeout(msgOutput, 1000);
     }
-    return newMessageInput;
+  }
+
+  function msgOutput() {
+    var data = new Date();
+    var hours = addZero(data.getHours());
+    var minutes = addZero(data.getMinutes());
+    var time = hours +':'+ minutes;
+    
+    var textOutput = "ok";
+    var newMessageOutput = $(".template li").clone();
+    newMessageOutput.addClass("msg output");
+    newMessageOutput.children("p").append(textOutput);
+    newMessageOutput.children(".time").append(time);
+    $(".chat-window").append(newMessageOutput);
   }
 
   function addZero(number) {
