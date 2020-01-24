@@ -9,6 +9,20 @@ $(document).ready(function() {
         searchContact();
       }
   );
+  $(document).keyup(
+      function() {
+        if (event.which == 13) {
+          sendMessage();
+        }
+      }
+    );
+  $(document).keyup(
+      function() {
+        if (event.which == 13) {
+          searchContact();
+        }
+      }
+    );
 
 });
 
