@@ -18,6 +18,12 @@ $(document).ready(function() {
       }
     );
 
+    $(document).on("click", ".user",
+        function() {
+          showChat(this);
+        }
+    );
+
 });
 
 
@@ -79,4 +85,12 @@ $(document).ready(function() {
         }
       }
     );
+  }
+
+  function showChat(element) {
+    var contact = $(element).attr("data-contact");
+    console.log(contact);
+    $(".chat-window").removeClass("active");
+    $(".chat-window[data-contact="+ contact +"]").addClass("active");
+
   }
