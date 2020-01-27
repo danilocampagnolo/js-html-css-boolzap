@@ -4,11 +4,6 @@ $(document).ready(function() {
         sendMessage();
       }
   );
-  $(document).on("click", ".search i.fa-search",
-      function() {
-        searchContact();
-      }
-  );
   $(document).keyup(
       function() {
         if (event.which == 13) {
@@ -16,11 +11,12 @@ $(document).ready(function() {
         }
       }
     );
-  $(document).keyup(
+
+  $(".search input").keyup(
       function() {
-        if (event.which == 13) {
+        
           searchContact();
-        }
+        
       }
     );
 
@@ -43,7 +39,7 @@ $(document).ready(function() {
       newMessageInput.addClass("msg input");
       newMessageInput.children("p").append(textInput);
       newMessageInput.children(".time").append(time);
-      $(".chat-window").append(newMessageInput);
+      $(".chat-window.active").append(newMessageInput);
       $(".write-message input").val("");
 
       setTimeout(msgOutput, 1000);
@@ -61,7 +57,7 @@ $(document).ready(function() {
     newMessageOutput.addClass("msg output");
     newMessageOutput.children("p").append(textOutput);
     newMessageOutput.children(".time").append(time);
-    $(".chat-window").append(newMessageOutput);
+    $(".chat-window.active").append(newMessageOutput);
   }
 
   function addZero(number) {
