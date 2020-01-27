@@ -116,5 +116,4 @@ $(document).ready(function() {
     $(".chat-window").removeClass("active");
     $(".user[data-contact="+ contact +"]").addClass("active");
     $(".chat-window[data-contact="+ contact +"]").addClass("active");
-
   }
