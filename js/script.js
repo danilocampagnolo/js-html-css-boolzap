@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(document).on("click", "i.fa-telegram-plane",
+  $(document).on("click", ".write-message .send",
       function() {
         sendMessage();
       }
@@ -17,14 +17,12 @@ $(document).ready(function() {
         searchContact();
       }
     );
-
     $(document).on("click", ".user",
         function() {
           showChat(this);
         }
     );
-
-    $(document).on("click", ".msg i",
+    $(document).on("click", ".msg i.message-options",
         function() {
           $(this).siblings(".info-delete").toggleClass("active");
         }
@@ -34,6 +32,19 @@ $(document).ready(function() {
           $(this).parents("li").hide();
         }
     );
+    $(".write-message input").focusin(
+      function(){
+        $(".write-message .send i").removeClass("fas fa-microphone");
+        $(".write-message .send i").addClass("fab fa-telegram-plane");
+      }
+    );
+    $(".write-message input").focusout(
+      function(){
+        $(".write-message .send i").removeClass("fab fa-telegram-plane");
+        $(".write-message .send i").addClass("fas fa-microphone");
+      }
+    );
+
 
 });
 
