@@ -4,7 +4,7 @@ $(document).ready(function() {
         sendMessage();
       }
   );
-  $(document).keyup(
+  $(".write-message input").keypress(
       function() {
         if (event.which == 13) {
           sendMessage();
@@ -14,9 +14,7 @@ $(document).ready(function() {
 
   $(".search input").keyup(
       function() {
-        
-          searchContact();
-        
+        searchContact();
       }
     );
 

@@ -24,9 +24,6 @@ li {
   margin: auto;
 }
 
-.display-none {
-  display: none;
-}
 
 /* ===============HEADER-WRAPPER================ */
 header {
@@ -187,9 +184,7 @@ main {
 
 /* chat */
 .chat-window {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
+  display: none;
   width: 100%;
   padding: 30px 50px;
   height: calc(100% - 70px);
@@ -197,6 +192,11 @@ main {
   background-position: center;
   background-repeat: repeat;
   overflow-y: scroll;
+}
+.chat-window.active {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
 }
 .msg {
   position: relative;
@@ -264,3 +264,6 @@ main {
 .template {
   display: none;
 }
+/* [data-contact] {
+  display: none;
+} */
