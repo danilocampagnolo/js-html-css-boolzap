@@ -62,6 +62,13 @@ header {
   display: flex;
   align-items: center;
 }
+.header-right .user {
+  display: none;
+}
+.header-right .user.active {
+  display: flex;
+  align-items: center;
+}
 .user-name {
   line-height: 18px;
   margin-left: 10px;
