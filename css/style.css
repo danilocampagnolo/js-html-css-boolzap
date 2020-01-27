@@ -215,7 +215,6 @@ main {
   box-shadow: 0 1px 0.5px rgba(0,0,0,.13);
   word-break: break-all;
 }
-
 .msg i {
   position: absolute;
   right: 10px;
@@ -234,6 +233,26 @@ main {
   display: block;
   text-align: right;
   margin-top: 4px;
+}
+.info-delete {
+  z-index: 2;
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 160px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.21);
+}
+.msg.output .info-delete {
+  left: 0px;
+}
+.info-delete.active {
+  display: block;
+}
+.info-delete p:first-child {
+  margin-bottom: 15px;
 }
 .msg.input {
   background: #dcf8c6;

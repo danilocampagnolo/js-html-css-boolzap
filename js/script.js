@@ -24,6 +24,12 @@ $(document).ready(function() {
         }
     );
 
+    $(document).on("click", ".msg i",
+        function() {
+          $(this).siblings(".info-delete").toggleClass("active");
+        }
+    );
+
 });
 
 
