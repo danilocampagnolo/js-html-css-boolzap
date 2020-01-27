@@ -251,6 +251,9 @@ main {
 .info-delete.active {
   display: block;
 }
+.info-delete p {
+  cursor: pointer;
+}
 .info-delete p:first-child {
   margin-bottom: 15px;
 }

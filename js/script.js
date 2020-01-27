@@ -29,6 +29,11 @@ $(document).ready(function() {
           $(this).siblings(".info-delete").toggleClass("active");
         }
     );
+    $(document).on("click", ".info-delete .delete",
+        function() {
+          $(this).parents("li").hide();
+        }
+    );
 
 });
 
