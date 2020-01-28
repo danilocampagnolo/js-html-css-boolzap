@@ -17,28 +17,28 @@ $(document).ready(function() {
         searchContact();
       }
     );
-    $(document).on("click", ".user",
+  $(document).on("click", ".user",
         function() {
           showChat(this);
         }
     );
-    $(document).on("click", ".msg i.message-options",
+  $(document).on("click", ".msg i.message-options",
         function() {
           $(this).siblings(".info-delete").toggleClass("active");
         }
     );
-    $(document).on("click", ".info-delete .delete",
+  $(document).on("click", ".info-delete .delete",
         function() {
           $(this).parents("li").hide();
         }
     );
-    $(".write-message input").focusin(
+  $(".write-message input").focusin(
       function(){
         $(".write-message .send i").removeClass("fas fa-microphone");
         $(".write-message .send i").addClass("fab fa-telegram-plane");
       }
     );
-    $(".write-message input").focusout(
+  $(".write-message input").focusout(
       function(){
         $(".write-message .send i").removeClass("fab fa-telegram-plane");
         $(".write-message .send i").addClass("fas fa-microphone");

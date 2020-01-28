@@ -175,6 +175,9 @@ main {
   cursor: pointer;
   background-color: #E9EBEB;
 }
+.user.active {
+  background-color: #E9EBEB;
+}
 .user-name {
   width: 100%;
 }
