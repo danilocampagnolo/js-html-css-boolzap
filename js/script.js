@@ -69,6 +69,8 @@ $(document).ready(function() {
       $(".chat-window.active").append(newMessageInput);
       $(".write-message input").val("");
 
+      scrollMessage()
+
       setTimeout(msgOutput, 1000);
     }
   }
@@ -85,6 +87,8 @@ $(document).ready(function() {
     newMessageOutput.children("p").append(textOutput);
     newMessageOutput.children(".time").append(time);
     $(".chat-window.active").append(newMessageOutput);
+
+    scrollMessage()
   }
 
   function addZero(number) {
@@ -117,4 +121,9 @@ $(document).ready(function() {
     $(".chat-window").removeClass("active");
     $(".user[data-contact="+ contact +"]").addClass("active");
     $(".chat-window[data-contact="+ contact +"]").addClass("active");
+  }
+
+  function scrollMessage() {
+  var heightContainer = $(".chat-window.active").height();
+  $('.chat-window.active').scrollTop(heightContainer * 999999999);
   }
