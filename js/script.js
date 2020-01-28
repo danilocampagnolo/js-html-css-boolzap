@@ -25,6 +25,7 @@ $(document).ready(function() {
   $(document).on("click", ".msg i.message-options",
         function() {
           $(this).siblings(".info-delete").toggleClass("active");
+          $(this).parents(".msg").siblings(".msg").find('.info-delete').removeClass('active');
         }
     );
   $(document).on("click", ".info-delete .delete",
